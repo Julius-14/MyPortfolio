@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Fonts-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="Style/style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <!--Header Design-->
+    <header class="header">
+        <a href="#" class="logo">Ju<span>Lius</span></a>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!--HOME DESIGN-->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3><strong>Hi, I am</strong></h3>
+            <h1><strong>Julius Gando</strong></h1>
+            <h3><strong>And I am a <span>Web Developer</span>.</strong></h3>
+            <p>I am delighted to introduce myself as a proficient Web Developer, passionately engaged in crafting <br> innovative digital experiences through the artful fusion of code and creativity.</p>
+         <div class="social-media">
+                <a href="https://www.facebook.com/profile.php?id=100093343107240&mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://m.me/100093343107240?hash=AbZihYHt82LmJJRD&source=qr_link_share" target="_blank"><i class="fa-brands fa-facebook-messenger"></i></a>
+                <a href="https://github.com/Julius-14" target="_blank"><i class="fa-brands fa-github"></i></i></a>
+            </div>  
+            <a href="docs/My_CV.pdf" target="_blank" class="btn">Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <img src="img/Profile.png" alt="">
+        </div>
+    </section>
+
+    <!--ABOUT DESIGN-->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/AboutMe.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading"><strong>About <span>Me</span></strong></h2>
+            <h3>Information Technology</h3>
+            <p>Hi there! My name is Julius Gando, 22 years old. I am a college student taking Bachelor of Science in Information Technology at Sorsogon State University - Bulan Campus. I am interested in this field because I enjoy exploring and studying parts and features of devices and also I want to develop and make my own website.</p>
+            
+            <div class="container">
+                <div class="switch-btns">
+                    <button id="skills-btn" class="active" onclick="showContent('skills')">Skills</button>
+                    <button id="edu-btn" onclick="showContent('education')">Education</button>
+                    <button id="certi-btn" onclick="showContent('certificate')">Certificates</button>
+                </div>
+                <div id="skills" class="content active">
+                    <h2>Microsoft Office</h2>
+                    <li>Word</li>
+                    <li>Excel</li>
+                    <li>PowerPoint</li>
+                    <h2>Web Developer</h2>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </div>
+                <div id="education" class="content">
+                    <h2>Tertiary (2020-present)</h2>
+                    <li>Sorsogon State University - Bulan Campus</li>
+                    <h2>Secodary (2013-2020)</h2>
+                    <li>Bulusan National High School</li>
+                    <h2>Primary (2007-2013)</h2>
+                    <li>Bulusan Central School</li>
+                </div>
+                <div id="certificate" class="content">
+                    <h2><a href="docs/Introduction_to_Cybersecurity.pdf" target="_blank"><i class="fa-solid fa-circle-chevron-right"></i> </a>Introduction to Cybersecurity</h2>
+                    <h2><a href="docs/Introduction_to_Data_Science.pdf" target="_blank"><i class="fa-solid fa-circle-chevron-right"></i> </a>Introduction to Data Science</h2>
+                    <h2><a href="docs/Computer_Hardware_Basics.pdf" target="_blank"><i class="fa-solid fa-circle-chevron-right"></i> </a>Computer Hardware Basics</h2>
+                    <h2><a href="docs/Python_Essentials_1.pdf" target="_blank"><i class="fa-solid fa-circle-chevron-right"></i> </a>Python Essentials 1</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--PORTFOLIO DESIGN-->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">My <span>Projects</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <i class="fa-brands fa-github"></i>
+                <h3>Note App</h3>
+                <a href="https://github.com/Julius-14/Note-App.git" target="_blank" class="btn">See More</a>
+            </div>
+
+            <div class="portfolio-box">
+                <i class="fa-brands fa-github-alt"></i>
+                <h3>Chat App</h3>
+                <a href="https://github.com/Julius-14/Chat-App" target="_blank" class="btn">See More</a>
+            </div>
+
+            <div class="portfolio-box">
+                <i class="fa-brands fa-square-github"></i>
+                <h3>Weather App</h3>
+                <a href="https://github.com/Julius-14/Weather-App.git" target="_blank" class="btn">See More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT DESIGN -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <!-- FOOTER DESIGN -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by Julius Gando | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+    <!-- SCROLL REVEAL JS -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- MAIN JS -->
+    <script src="Main/main.js"></script>
+</body>
+</html>
